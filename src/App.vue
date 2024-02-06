@@ -7,5 +7,6 @@
   <div class="text-center">Welcome to my site!</div>
   <div>how are you</div>
   <div>test</div>
+  <div>test2</div>
   <!-- <TheChessboard /> -->
 </template>
