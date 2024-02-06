@@ -1,8 +1,9 @@
 <script setup>
-import { TheChessboard } from "vue3-chessboard";
-import "vue3-chessboard/style.css";
+// import { TheChessboard } from "vue3-chessboard";
+// import "vue3-chessboard/style.css";
 </script>
 
 <template>
-  <TheChessboard />
+  <div class="text-center">Welcome to my site!</div>
+  <!-- <TheChessboard /> -->
 </template>
