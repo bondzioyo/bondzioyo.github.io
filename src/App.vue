@@ -8,5 +8,6 @@
   <div>how are you</div>
   <div>test</div>
   <div>test2</div>
+  <div>test2</div>
   <!-- <TheChessboard /> -->
 </template>
