@@ -5,5 +5,6 @@
 
 <template>
   <div class="text-center">Welcome to my site!</div>
+  <div>how are you</div>
   <!-- <TheChessboard /> -->
 </template>
