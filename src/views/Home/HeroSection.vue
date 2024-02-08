@@ -1,11 +1,20 @@
 <template>
-  <div class="grid md:grid-cols-6">
-    <div class="md:col-span-3 flex justify-center items-center text-my-white">
-      <div class="grid gap-[20px] text-center md:text-start">
-        <div class="text-[2.5em]">{{ $t("Hello, I am") }}</div>
-        <div class="text-[3.5em] font-extrabold">Wojciech Świątek</div>
-        <div class="bg-accent rounded-[2px] mx-auto md:mx-0 text-my-black shadow-sm w-fit h-fit p-[4px]">
-          Frontend Developer
+  <div class="grid md:grid-cols-6 gap-[20px] mg:gap-auto">
+    <div class="md:col-span-3 flex justify-center items-center md:justify-start text-my-white">
+      <div class="flex flex-col-reverse md:flex-row gap-[35px]">
+        <div class="flex gap-[50px] flex-row md:flex-col justify-center">
+          <a v-for="social in socials" :href="social.link" target="_blank" class="group/test">
+            <div class="rounded-full shadow-[0_0_10px_1px_rgba(0,0,0,0.3)] group-hover/test:shadow-accent">
+              <div class="fill-accent group-hover/test:fill-accent" v-html="social.icon"></div>
+            </div>
+          </a>
+        </div>
+        <div class="grid gap-[20px] text-center md:text-start">
+          <div class="text-[2.5em] leading-[105%]">{{ $t("Hello, I am") }}</div>
+          <div class="text-[3.5em] font-extrabold leading-[105%]">Wojciech Świątek</div>
+          <div class="bg-accent rounded-[2px] mx-auto md:mx-0 text-my-black shadow-sm w-fit h-fit p-[4px]">
+            Frontend Developer
+          </div>
         </div>
       </div>
     </div>
@@ -17,4 +26,11 @@
 </template>
 
 <script setup>
+import { ref, computed } from 'vue';
+import fb from '../../assets/socials/fb.js'
+// import ig from '../../assets/socials/ig.js'
+import gh from '../../assets/socials/gh.js'
+import linkedin from '../../assets/socials/linkedin.js'
+
+const socials = ref([{ icon: linkedin, link: 'https://www.linkedin.com/in/wojciech-%C5%9Bwi%C4%85tek-5ab587211/' }, { icon: gh, link: 'https://github.com/bondzioyo' }, { icon: fb, link: 'https://www.facebook.com/' }]);
 </script>

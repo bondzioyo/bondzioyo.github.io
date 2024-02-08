@@ -4,7 +4,7 @@
   <div class="grid gap-[20px]">
     <div>{{ $t("Play chess with me!") }}</div>
     <div class="flex items-baseline gap-[3px]"><span class="py-[4px]">{{ $t("Moves") }}:</span>
-      <div id="chess-move-notation" class="max-w-[300px] overflow-x-scroll">
+      <div id="chess-move-notation" class="max-w-[250px] w-full overflow-x-scroll">
         <div class="flex items-baseline gap-[3px] moves-holder">
           <div :class="`player-move player-${move.color}`" v-for="move, i in movesHistory">{{ move.san }}</div>
         </div>
@@ -21,6 +21,7 @@ import WinnerModal from './WinnerModal.vue'
 import { ref } from 'vue';
 import "vue3-chessboard/style.css";
 import { Engine } from "./Engine";
+import chessBoardSVG from '../../assets/chessboard/chessboard.svg';
 const boardConfig = {
   coordinates: true,
   width: 300,
@@ -39,14 +40,15 @@ function handleBoardCreated(boardApi = BoardApi) {
   engine = new Engine(boardApi);
   engine._setOption("Skill Level", 10);
   const board = document.getElementsByTagName("cg-board");
-  board[0].style.filter = "grayscale(1)";
+  board[0].style.background = `url(${chessBoardSVG})`;
+  board[0].style.backgroundSize = 'contain';
 }
 
 function rematch() {
   showModal.value = false;
+  movesHistory.value = null;
   boardAPI?.resetBoard()
-  const board = document.getElementsByTagName("cg-board");
-  board[0].style.filter = "grayscale(1)";
+  handleBoardCreated()
 }
 
 function handleCheckmate(isMated) {
