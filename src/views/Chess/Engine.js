@@ -68,7 +68,7 @@ export class Engine {
 
   sendPosition(position) {
     this._stockfish.postMessage(`position startpos moves ${position}`);
-    this._stockfish.postMessage("go movetime 2000");
+    this._stockfish.postMessage("go movetime 500");
   }
 }
 

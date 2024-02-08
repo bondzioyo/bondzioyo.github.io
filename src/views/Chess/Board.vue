@@ -15,7 +15,8 @@ import { TheChessboard, BoardApi } from "vue3-chessboard";
 import "vue3-chessboard/style.css";
 import { Engine } from "./Engine";
 const boardConfig = {
-  coordinates: false,
+  coordinates: true,
+  svg: "vite.svg",
 };
 
 let boardAPI;
@@ -25,6 +26,9 @@ function handleBoardCreated(boardApi = BoardApi) {
   boardAPI = boardApi;
 
   engine = new Engine(boardApi);
+  engine._setOption("Skill Level", 10);
+  const board = document.getElementsByTagName("cg-board");
+  board[0].style.filter = "grayscale(1)";
 }
 
 function handleCheckmate(isMated) {

@@ -1,6 +1,6 @@
 <template>
-  <main class="grid justify-center p-3">
-    <HeroSection class="container"></HeroSection>
+  <main class="container mx-auto">
+    <HeroSection></HeroSection>
     <Board></Board>
   </main>
 </template>

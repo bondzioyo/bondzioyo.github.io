@@ -1,6 +1,6 @@
 <template>
   <header class="flex justify-center h-[55px] md:h-[70px]">
-    <div class="container flex justify-between items-center p-3">
+    <div class="container flex justify-between items-center">
       <div>
         <svg
           width="152"
