@@ -17,6 +17,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#chess-move-notation::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#chess-move-notation {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.player-move {
+  white-space: nowrap;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.player-w {
+  background: theme('colors.my-white');
+  color: theme('colors.my-black');
+
+}
+
+.player-b {
+  background: rgb(49, 49, 49);
+  color: theme('colors.my-white');
+}
+
 /* 
 a {
   font-weight: 500;

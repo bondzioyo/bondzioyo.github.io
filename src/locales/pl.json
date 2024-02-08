@@ -1,4 +1,7 @@
 {
     "Hello, I am": "Cześć, jestem",
-    "Play chess with me!": "Zagraj ze mną w szachy!"
+    "Play chess with me!": "Zagraj ze mną w szachy!",
+    "Moves": "Ruchy",
+    "You lost!": "Przegrałeś!",
+    "You Won!": "Wygrałeś!"
 }
