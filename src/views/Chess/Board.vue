@@ -1,12 +1,8 @@
 <template>
   <div>
-    <div>Play chass with me!</div>
-    <TheChessboard
-      @board-created="handleBoardCreated"
-      :board-config="boardConfig"
-      @move="handleMove"
-      @checkmate="handleCheckmate"
-    />
+    {{ $t("Play chess with me!") }}
+    <TheChessboard @board-created="handleBoardCreated" :board-config="boardConfig" @move="handleMove"
+      @checkmate="handleCheckmate" />
   </div>
 </template>
 

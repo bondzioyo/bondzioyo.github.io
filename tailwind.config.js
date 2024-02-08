@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  content: [],
+  content: [
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     container: {
       padding: {
@@ -20,5 +22,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 };
