@@ -21,7 +21,6 @@ import WinnerModal from './WinnerModal.vue'
 import { ref } from 'vue';
 import "vue3-chessboard/style.css";
 import { Engine } from "./Engine";
-import chessBoardSVG from '../../assets/chessboard/chessboard.svg';
 const boardConfig = {
   coordinates: true,
   width: 300,
@@ -40,7 +39,7 @@ function handleBoardCreated(boardApi = BoardApi) {
   engine = new Engine(boardApi);
   engine._setOption("Skill Level", 10);
   const board = document.getElementsByTagName("cg-board");
-  board[0].style.background = `url(${chessBoardSVG})`;
+  board[0].style.background = `url(https://i.postimg.cc/j5H70b6C/chessboard.png)`;
   board[0].style.backgroundSize = 'contain';
 }
 
