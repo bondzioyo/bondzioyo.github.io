@@ -5,5 +5,9 @@
     "You lost!": "Przegrałeś!",
     "You Won!": "Wygrałeś!",
     "New game": "Nowa gra",
-    "Close": "Zamknij"
+    "Close": "Zamknij",
+    "All rights reserved": "Wszelkie prawa zastrzeżone",
+    "English": "Angielski",
+    "About me": "O mnie",
+    "about_me": "Jestem Frontend Developerem z ponad 2-letnim komercyjnym doświadczeniem w tworzeniu aplikacji i stron WWW w Vue.<br>Programowaniem interesuję się już od czasów studiów magisterskich, kiedy to stworzyłem swój pierwszy projekt z wykorzystaniem HTML, CSS i JS. Później płynnie przeszedłem do nauki Reacta i stworzyłem swoją pierwszą aplikację.<br>Chętnie się uczę. Poza pracą staram się regularnie brać udział w kursach na platformach takich jak Udemy i słuchać podcastów związanych z branżą IT."
 }
