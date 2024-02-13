@@ -21,11 +21,13 @@
           }}
         </div>
       </div>
-      <div class="text-lg text-nowrap">2023 - {{ $t("present") }}</div>
+      <div class="text-lg text-nowrap min-w-[123px] sm:min-w-fit">
+        2023 - {{ $t("present") }}
+      </div>
     </div>
     <div class="flex md:grid gap-[30px] grid-cols-6 pt-[30px]">
       <div class="md:col-span-2"></div>
-      <div class="text-lg text-nowrap min-w-fit">
+      <div class="text-lg text-nowrap min-w-[123px] sm:min-w-fit">
         2022 - {{ $t("present") }}
       </div>
       <div
@@ -70,11 +72,13 @@
           }}
         </div>
       </div>
-      <div class="text-lg text-nowrap">2021</div>
+      <div class="text-lg text-nowrap min-w-[123px] sm:min-w-fit">2021</div>
     </div>
     <div class="flex md:grid gap-[30px] grid-cols-6 pt-[30px]">
       <div class="md:col-span-2"></div>
-      <div class="text-lg text-nowrap min-w-fit">2018 - 2019</div>
+      <div class="text-lg text-nowrap min-w-[123px] sm:min-w-fit">
+        2018 - 2019
+      </div>
       <div
         class="md:col-span-3 w-full flex flex-col items-start justify-center relative"
       >
