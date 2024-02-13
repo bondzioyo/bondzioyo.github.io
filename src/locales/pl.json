@@ -9,5 +9,19 @@
     "All rights reserved": "Wszelkie prawa zastrzeżone",
     "English": "Angielski",
     "About me": "O mnie",
-    "about_me": "Jestem Frontend Developerem z ponad 2-letnim komercyjnym doświadczeniem w tworzeniu aplikacji i stron WWW w Vue.<br>Programowaniem interesuję się już od czasów studiów magisterskich, kiedy to stworzyłem swój pierwszy projekt z wykorzystaniem HTML, CSS i JS. Później płynnie przeszedłem do nauki Reacta i stworzyłem swoją pierwszą aplikację.<br>Chętnie się uczę. Poza pracą staram się regularnie brać udział w kursach na platformach takich jak Udemy i słuchać podcastów związanych z branżą IT."
+    "about_me": "Jestem Frontend Developerem z ponad 2-letnim komercyjnym doświadczeniem w tworzeniu aplikacji i stron WWW w Vue.<br>Programowaniem interesuję się już od czasów studiów magisterskich, kiedy to stworzyłem swój pierwszy projekt z wykorzystaniem HTML, CSS i JS. Później płynnie przeszedłem do nauki Reacta i stworzyłem swoją pierwszą aplikację.<br>Chętnie się uczę. Poza pracą staram się regularnie brać udział w kursach na platformach takich jak Udemy i słuchać podcastów związanych z branżą IT.",
+    "Education": "Wykształcenie",
+    "Systems Engineering": "Inżynieria systemów",
+    "Wroclaw University of Science And technology": "Politechnika Wrocławska",
+    "Faculty of Information Technology and Management": "Wydział Informatyki i Zarządzania",
+    "Master of Science": "Studia magisterskie",
+    "Automation Control and Robotics": "Automatyka i Robotyka",
+    "Faculty of Electrical Engineering": "Wydział Elektryczny",
+    "Bachelor of Science": "Studia inżynierskie",
+    "Work experience": "Doświadczenie zawodowe",
+    "present": "obecnie",
+    "Developing customizable frontstore for online shopping (Vue).": "Tworzenie frontu sklepu internetowego z możliwością indywidualnej konfiguracji pod konretną firmę (Vue).",
+    "Developing SaaS application and landing page (Vue, Laravel).": "Tworzenie i rozwijanie aplikacji typu SaaS oraz jej landingu (Vue, Laravel).",
+    "Developing Web application and sites with responsive design, working with UX/UI designers.": "Tworzenie aplikacji webowych oraz stron internetowych z zachowaniem responsywnego designu, praca z projektantem UX/UI.",
+    "Activity in the science club at Wroclaw University of Science and Technology.": "Działalność w kole naukowym Politechniki Wrocławskiej."
 }

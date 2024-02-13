@@ -1,6 +1,7 @@
 <template>
-  <div class="text-xl font-bold uppercase">
-    {{ text }}
+  <div class="grid gap-[15px] text-xl font-bold uppercase">
+    <slot></slot>
+    <div class="h-[4px] w-[60px] bg-accent"></div>
   </div>
 </template>
 

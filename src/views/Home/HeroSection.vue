@@ -1,5 +1,5 @@
 <template>
-  <div class="grid md:grid-cols-6 gap-[20px] mg:gap-auto">
+  <div class="grid md:grid-cols-6 gap-[20px] mg:gap-auto mt-[20px]">
     <div
       class="md:col-span-3 flex justify-center items-center md:justify-start text-my-white"
     >
@@ -39,8 +39,9 @@
     <div class="md:col-span-3 flex justify-center">
       <img
         class="max-h-[400px] md:max-h-[500px]"
-        src="../../assets/me.png"
+        src="../../assets/me2.png"
         alt="me"
+        loading="lazy"
       />
     </div>
   </div>
