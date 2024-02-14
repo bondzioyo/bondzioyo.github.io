@@ -3,7 +3,7 @@
     <section-title>{{ $t("Education") }}</section-title>
     <div class="grid grid-cols-2 gap-[30px]">
       <div
-        class="col-span-2 md:col-span-1 bg-white/10 rounded-[10px] p-[30px] overflow-hidden relative before:bg-[url(../../../src/assets/pwr-logo-bw.png)] before:block before:absolute before:w-full before:h-full before:top-[50%] before:translate-y-[-50%] before:opacity-10 before:right-[-50%] before:grayscale before:bg-contain before:bg-no-repeat"
+        class="col-span-2 md:col-span-1 bg-white/10 rounded-[10px] p-[30px] overflow-hidden relative before:bg-[url(/pwr-logo-bw.png)] before:block before:absolute before:w-full before:h-full before:top-[50%] before:translate-y-[-50%] before:opacity-10 before:right-[-50%] before:grayscale before:bg-contain before:bg-no-repeat"
       >
         <div class="grid gap-[8px] relative">
           <div class="text-md font-semibold text-accent text-center">
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div
-        class="col-span-2 md:col-span-1 bg-white/10 rounded-[10px] p-[30px] overflow-hidden relative before:bg-[url(../../../src/assets/pwr-logo-bw.png)] before:block before:absolute before:w-full before:h-full before:top-[50%] before:translate-y-[-50%] before:opacity-10 before:right-[-50%] before:grayscale before:bg-contain before:bg-no-repeat"
+        class="col-span-2 md:col-span-1 bg-white/10 rounded-[10px] p-[30px] overflow-hidden relative before:bg-[url(/pwr-logo-bw.png)] before:block before:absolute before:w-full before:h-full before:top-[50%] before:translate-y-[-50%] before:opacity-10 before:right-[-50%] before:grayscale before:bg-contain before:bg-no-repeat"
       >
         <div class="grid gap-[8px] relative">
           <div class="text-md font-semibold text-accent text-center">
