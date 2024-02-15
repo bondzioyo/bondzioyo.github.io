@@ -16,6 +16,9 @@ const routes = [
     path: "/:pathMatch(.*)*",
     name: "404",
     component: { template: "<div>Not found</div>" },
+    beforeEnter: (to, from, next) => {
+      next("/");
+    },
   },
 ];
 

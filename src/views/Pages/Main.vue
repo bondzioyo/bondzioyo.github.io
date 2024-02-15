@@ -6,10 +6,10 @@
     <WorkExperience class="grid gap-[20px]"></WorkExperience>
     <Education class="grid gap-[20px]"></Education>
     <Interest class="grid gap-[20px]"></Interest>
-    <div class="flex items-center justify-center">
+    <div v-if="!showChessboard" class="flex items-center justify-center">
       <div class="group/play-btn">
-        <router-link
-          to="/chess"
+        <button
+          @click="unhideChessboard"
           class="flex items-center rounded-[8px] outline focus:ring-2 ring-accent ring-offset-1 px-[10px] py-[5px] outline-accent group-hover/play-btn:outline-accent/60"
         >
           <img
@@ -21,10 +21,18 @@
           />&nbsp;<span class="text-[25px]">{{ $t("Play chess") }}&nbsp;</span
           ><span class="text-[20px] group-hover/play-btn:text-accent"
             >&rarr;</span
-          ></router-link
-        >
+          >
+        </button>
       </div>
     </div>
+    <transition
+      enter-from-class="opacity-0"
+      leave-to-class="opacity-0"
+      enter-active-class="transition-all duration-[500ms]"
+      leave-active-class="transition-all duration-[500ms]"
+    >
+      <Board v-if="showChessboard"></Board>
+    </transition>
   </main>
 </template>
 
@@ -35,4 +43,11 @@ import AboutMe from "../Home/AboutMe.vue";
 import WorkExperience from "../Home/WorkExperience.vue";
 import Education from "../Home/Education.vue";
 import Interest from "../Home/Interest.vue";
+import Board from "../Chess/Board.vue";
+import { ref } from "vue";
+
+const showChessboard = ref(false);
+const unhideChessboard = () => {
+  showChessboard.value = !showChessboard.value;
+};
 </script>
