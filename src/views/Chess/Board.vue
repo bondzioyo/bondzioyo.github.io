@@ -18,6 +18,7 @@
           <div
             :class="`player-move player-${move.color}`"
             v-for="(move, i) in movesHistory"
+            :key="i"
           >
             {{ move.san }}
           </div>

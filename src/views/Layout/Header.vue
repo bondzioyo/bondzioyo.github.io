@@ -10,16 +10,18 @@
     }"
   >
     <div class="container flex justify-between items-center">
-      <div class="flex items-center">
-        <img
-          src="../../assets/gh-pages.png"
-          alt="gh-pages"
-          class="object-contain w-[50px] md:w-[65px] aspect-square"
-        />
-        <div class="text-[20px] md:text-[20px] font-extrabold font-mono">
-          Portfolio
-        </div>
-      </div>
+      <router-link :to="'/'">
+        <div class="flex items-center">
+          <img
+            src="../../assets/gh-pages.png"
+            alt="gh-pages"
+            class="object-contain w-[50px] md:w-[65px] aspect-square"
+          />
+          <div class="text-[20px] md:text-[20px] font-extrabold font-mono">
+            Portfolio
+          </div>
+        </div></router-link
+      >
       <div>
         <LanguageSwitcher></LanguageSwitcher>
       </div>

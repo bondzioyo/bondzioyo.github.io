@@ -42,15 +42,15 @@
         src="../../assets/me2.png"
         alt="me"
         loading="lazy"
+        decoding="async"
       />
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref } from "vue";
 import fb from "../../assets/socials/fb.js";
-// import ig from '../../assets/socials/ig.js'
 import gh from "../../assets/socials/gh.js";
 import linkedin from "../../assets/socials/linkedin.js";
 

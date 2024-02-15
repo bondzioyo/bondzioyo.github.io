@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-my-black/90">
+  <div class="bg-my-black/90 mt-[50px] md:mt-[80px]">
     <div class="container mx-auto py-[30px]">
       <div class="flex flex-col gap-[12px] items-center justify-center">
         <div class="text-lg font-bold">Wojciech Świątek</div>
