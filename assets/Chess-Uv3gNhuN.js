@@ -1,0 +1,1 @@
+import{_ as a}from"./Board-TbMAytqZ.js";import{o as e,c as o,f as s}from"./index-S2xqbLou.js";const t={class:"container mx-auto grid gap-[50px] md:gap-[80px]"},p={__name:"Chess",setup(c){return(r,_)=>(e(),o("main",t,[s(a)]))}};export{p as default};
