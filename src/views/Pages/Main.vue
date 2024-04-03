@@ -25,6 +25,19 @@
         </button>
       </div>
     </div>
+    <div v-if="!showWordle" class="flex items-center justify-center">
+      <div class="group/play-btn">
+        <button
+          @click="unhideWordle"
+          class="flex items-center rounded-[8px] outline focus:ring-2 ring-accent ring-offset-1 px-[10px] py-[5px] outline-accent group-hover/play-btn:outline-accent/60"
+        >
+          <span class="text-[25px]">{{ $t("Play Wordle") }}&nbsp;</span
+          ><span class="text-[20px] group-hover/play-btn:text-accent"
+            >&rarr;</span
+          >
+        </button>
+      </div>
+    </div>
     <transition
       enter-from-class="opacity-0"
       leave-to-class="opacity-0"
@@ -33,6 +46,7 @@
     >
       <Board v-if="showChessboard"></Board>
     </transition>
+    <Wordle v-if="showWordle"></Wordle>
   </main>
 </template>
 
@@ -44,10 +58,15 @@ import WorkExperience from "../Home/WorkExperience.vue";
 import Education from "../Home/Education.vue";
 import Interest from "../Home/Interest.vue";
 import Board from "../Chess/Board.vue";
+import Wordle from "../Games/Wordle.vue";
 import { ref } from "vue";
 
 const showChessboard = ref(false);
+const showWordle = ref(false);
 const unhideChessboard = () => {
   showChessboard.value = !showChessboard.value;
+};
+const unhideWordle = () => {
+  showWordle.value = !showWordle.value;
 };
 </script>

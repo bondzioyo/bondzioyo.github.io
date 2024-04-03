@@ -6,7 +6,7 @@
         <img
           src="../../assets/interest/code.svg"
           alt="code"
-          class="h-[50px]"
+          class="h-[40px]"
           loading="lazy"
           decoding="async"
         />
@@ -16,7 +16,7 @@
         <img
           src="../../assets/interest/knight.svg"
           alt="knight"
-          class="h-[50px]"
+          class="h-[40px]"
           loading="lazy"
           decoding="async"
         />
@@ -26,7 +26,7 @@
         <img
           src="../../assets/interest/pitch.svg"
           alt="pitch"
-          class="h-[50px]"
+          class="h-[40px]"
           loading="lazy"
           decoding="async"
         />
@@ -36,7 +36,7 @@
         <img
           src="../../assets/interest/map.svg"
           alt="map"
-          class="h-[50px]"
+          class="h-[55px]"
           loading="lazy"
           decoding="async"
         />

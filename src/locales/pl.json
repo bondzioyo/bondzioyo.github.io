@@ -1,6 +1,6 @@
 {
     "Hello, I am": "Cześć, jestem",
-    "Play chess with me!": "Zagraj ze mną w szachy!",
+    "Play chess with me!": "Zagraj w szachy!",
     "Moves": "Ruchy",
     "You lost!": "Przegrałeś!",
     "You Won!": "Wygrałeś!",
@@ -26,5 +26,11 @@
     "Activity in the science club at Wroclaw University of Science and Technology.": "Działalność w kole naukowym Politechniki Wrocławskiej.",
     "You": "Ty",
     "Undo": "Cofnij",
-    "Play chess": "Zagraj w szachy"
+    "Play chess": "Zagraj w szachy",
+    "Get hint": "Podpowiedź",
+    "The word to guess is": "Słowo do odgadnięcia to",
+    "Start new game": "Zagraj ponownie",
+    "Check": "Sprawdź",
+    "Draw word": "Losuj słowo",
+    "Play Wordle": "Zagraj w Wordle!"
 }
