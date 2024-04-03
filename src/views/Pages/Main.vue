@@ -47,6 +47,7 @@
       <Board v-if="showChessboard"></Board>
     </transition>
     <Wordle v-if="showWordle"></Wordle>
+    <CountryInformator></CountryInformator>
   </main>
 </template>
 
@@ -59,6 +60,7 @@ import Education from "../Home/Education.vue";
 import Interest from "../Home/Interest.vue";
 import Board from "../Chess/Board.vue";
 import Wordle from "../Games/Wordle.vue";
+import CountryInformator from "../Widgets/CountryInformator/Holder.vue";
 import { ref } from "vue";
 
 const showChessboard = ref(false);
