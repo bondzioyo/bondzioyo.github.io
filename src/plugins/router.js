@@ -15,10 +15,7 @@ const routes = [
   {
     path: "/:pathMatch(.*)*",
     name: "404",
-    component: { template: "<div>Not found</div>" },
-    beforeEnter: (to, from, next) => {
-      next("/");
-    },
+    redirect: "/",
   },
 ];
 
@@ -26,9 +23,12 @@ const router = createRouter({
   history: createWebHistory(),
   routes: routes,
   scrollBehavior(to, from, savedPosition) {
-    return {
-      top: to.meta.startPosition === "top" ? 0 : savedPosition.top - 200,
-    };
+    if (savedPosition) return savedPosition;
+
+    if (to?.meta?.startPosition === "top") {
+      return { top: 0 };
+    }
+    return false;
   },
 });
 

@@ -1,11 +1,12 @@
 <template>
   <main class="container mx-auto grid gap-[50px] md:gap-[80px]">
-    <HeroSection></HeroSection>
-    <Technologies></Technologies>
-    <AboutMe class="grid gap-[20px]"></AboutMe>
-    <WorkExperience class="grid gap-[20px]"></WorkExperience>
-    <Education class="grid gap-[20px]"></Education>
-    <Interest class="grid gap-[20px]"></Interest>
+    <HeroSection />
+    <Technologies />
+    <AboutMe class="grid gap-[20px]" />
+    <WorkExperience class="grid gap-[20px]" />
+    <Education class="grid gap-[20px]" />
+    <Courses class="grid gap-[20px]" />
+    <Interest class="grid gap-[20px]" />
     <div v-if="!showChessboard" class="flex items-center justify-center">
       <div class="group/play-btn">
         <button
@@ -44,10 +45,10 @@
       enter-active-class="transition-all duration-[500ms]"
       leave-active-class="transition-all duration-[500ms]"
     >
-      <Board v-if="showChessboard"></Board>
+      <Board v-if="showChessboard" />
     </transition>
-    <Wordle v-if="showWordle"></Wordle>
-    <CountryInformator></CountryInformator>
+    <Wordle v-if="showWordle" />
+    <CountryInformator />
   </main>
 </template>
 
@@ -57,6 +58,7 @@ import Technologies from "../Home/Technologies.vue";
 import AboutMe from "../Home/AboutMe.vue";
 import WorkExperience from "../Home/WorkExperience.vue";
 import Education from "../Home/Education.vue";
+import Courses from "../Home/Courses.vue";
 import Interest from "../Home/Interest.vue";
 import Board from "../Chess/Board.vue";
 import Wordle from "../Games/Wordle.vue";

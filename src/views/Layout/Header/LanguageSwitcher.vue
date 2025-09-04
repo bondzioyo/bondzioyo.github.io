@@ -7,11 +7,11 @@
       type="button"
     >
       <img
-        v-if="userLocale === 'pl'"
+        v-if="currentLocale === 'pl'"
         src="../../../assets/locales/pl.svg"
         alt="pl"
       /><img
-        v-else-if="userLocale === 'en'"
+        v-else-if="currentLocale === 'en'"
         src="../../../assets/locales/en.svg"
         alt="en"
       /><svg
@@ -30,24 +30,23 @@
         />
       </svg>
     </button>
-    <!-- Dropdown menu -->
     <div
       id="dropdown"
       class="w-auto z-10 hidden bg-[#414141] divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
     >
       <ul class="text-smtext-my-white" aria-labelledby="dropdownDefaultButton">
-        <li v-if="userLocale !== 'pl'">
+        <li v-if="currentLocale !== 'pl'">
           <button
-            @click="setLocale('pl')"
+            @click="changeLocale('pl')"
             class="flex gap-2 items-center w-full px-2 py-2 text-xs hover:bg-white-/30"
           >
             <img src="../../../assets/locales/pl.svg" alt="pl" />
             <span>{{ $t("Polish") }}</span>
           </button>
         </li>
-        <li v-if="userLocale !== 'en'">
+        <li v-if="currentLocale !== 'en'">
           <button
-            @click="setLocale('en')"
+            @click="changeLocale('en')"
             class="flex gap-2 items-center w-full px-2 py-2 text-xs hover:bg-white-/30"
           >
             <img src="../../../assets/locales/en.svg" alt="en" />
@@ -60,9 +59,17 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import { initDropdowns } from "flowbite";
-import { setLocale, userLocale } from "../../../plugins/i18n-config";
+import { setLocale, userLocale, i18n } from "../../../plugins/i18n-config";
+
+const currentLocale = ref(userLocale);
+
+const changeLocale = (locale) => {
+  setLocale(locale);
+  i18n.global.locale.value = locale;
+  currentLocale.value = locale;
+};
 
 onMounted(() => {
   initDropdowns();

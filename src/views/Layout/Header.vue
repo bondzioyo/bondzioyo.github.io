@@ -46,12 +46,13 @@ const updateHeight = () => {
 
 onMounted(() => {
   updateHeight();
-  window.addEventListener("resize", updateHeight());
-  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("resize", updateHeight);
+  window.addEventListener("scroll", handleScroll, { passive: true });
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener("resize", updateHeight());
+  window.removeEventListener("resize", updateHeight);
+  window.removeEventListener("scroll", handleScroll);
 });
 
 const handleScroll = () => {
